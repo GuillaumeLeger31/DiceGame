@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" 
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+    crossorigin="anonymous"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"/>
+    <title>Jeu du dé !</title>
+</head>
+<body>
+    <div class="container">
+        <p id="new"><span id="add"><i class="fas fa-plus-circle fa-clickable" class="add"></i></span> NEW GAME</p>
+        <div class="display">
+        <div class="player">
+            <p class="fontPlayer" id="name-0">PLAYER 1</p>
+            <span class="ROUND" id="round-0">0</span>
+            <div class="containerCurrent">
+                <div class="redBox">
+                <p class="pCurrent">current</p>
+                <p class="CURRENT" id="current-0">0</p>
+                </div>
+            </div>
+        </div>
+
+        <img src="dice-5.jpg" alt="Dice" class="dice" id="dices">
+
+        <div class="player">
+            <p class="fontPlayer" id="name-1">PLAYER 2</p>
+            <span class="ROUND" id="round-1">0</span>
+            <div class="containerCurrent">
+                <div class="redBox">
+                <p class="pCurrent">current</p>
+                <span class="CURRENT" id="current-1">0</span>
+                </div>
+            </div>
+        </div>
+        </div>
+        
+        <p id="roll"><span id="roll"><i class="fas fa-sync fa-clickable"></i></span> ROLL DICE</p>
+        <p id="hold"><span id="hold"><i class="fas fa-share-square fa-clickable"></i></span> HOLD</p>
+    </div>
+    <script src="script.js"></script>   
+</body>
+</html>

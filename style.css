@@ -1,0 +1,122 @@
+
+body {
+    background-color: #f9fafb;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* CONTAINER */
+
+.container {
+    background: linear-gradient(to left, #fff 50%, #f7f7f7 50%);
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    width: 500px;
+    height: 320px;
+    text-align: center;
+
+}
+
+.display {
+    display: flex;
+    text-align: center;
+}
+
+.player {
+    width: 50%;
+    height: 100%;
+}
+
+.fa-dice-five {
+    font-size: 60px;
+    margin-top: 50px;
+    position: absolute;
+    margin-left: 223.75px;
+    filter: drop-shadow(0 2px 10px rgba(0, 0, 0, 0.3));
+}
+.dice{
+    width: 50px;
+    border-radius: 5px;
+    font-size: 60px;
+    margin-top: 40px;
+    position: absolute;
+    margin-left: 223.75px;
+    filter: drop-shadow(0 2px 10px rgba(0, 0, 0, 0.3));
+}
+
+#test {
+    width: 50px;
+    height: 50px;
+}
+
+.containerCurrent {
+    position: absolute;
+    height: 170px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 86px;
+}
+
+.redBox {
+    background-color: black;
+    width: 75px;
+    height: 56px;
+    margin-top: 25px;
+    border-radius: 3px;
+}
+
+.fa-clickable {
+    cursor:pointer;
+    outline:none;
+}
+/* FONT-SIZE */
+
+p {
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+}
+
+span {
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+}
+.fontPlayer {
+    font-size: 30px;
+    margin-bottom: 0;
+}
+#new{
+    margin-top: 20px;
+}
+
+.ROUND {
+    font-size: 40px;
+    margin: 0;
+}
+
+#roll {
+    margin-top: 70px;
+    -webkit-user-select: none;
+}
+
+#hold {
+    margin-top: 18px;
+    -webkit-user-select: none;
+}
+
+.pCurrent {
+    margin-top: 2px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.CURRENT {
+    margin-top: 0px;
+    color: white;
+}
+

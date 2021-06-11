@@ -36,7 +36,7 @@ hold.addEventListener('click', function () {
     if (gameStart) {
     score[activePlayer] += current;
     document.querySelector("#round-" + activePlayer).textContent = score[activePlayer];
-    if (score[activePlayer] >= 10) {
+    if (score[activePlayer] >= 100) {
         document.querySelector('#name-' + activePlayer).textContent = 'Winner!';
         gameStart = false;
     } else {

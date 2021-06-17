@@ -29,4 +29,3 @@ Lors de son tour, le joueur peut décider à tout moment de:
 tour de l’autre joueur.
 - Lancer le dé. S’il obtient un 1, son score current est perdu et c’est la fin de son tour.
 Le premier joueur qui atteint les 100 points sur global gagne le jeu.
->>>>>>> 9e964ccb377f6fa82e7b837bec100f34bef2d646

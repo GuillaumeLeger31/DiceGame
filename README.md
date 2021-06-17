@@ -11,7 +11,7 @@ Le résultat d’un lancer est ajouté au CURRENT. Si le joueur tombe sur 1, il 
 Il peut  du coup garder son CURRENT et l'ajouter a son SCORE avec l'option hold qui entrainera du coup le changement de joueur..
 
 
-## option hold
+## option roll
 - Cliquer sur l’option “roll”. qui permet de lancer le dé. S’il obtient un 1, son score current est perdu et c’est la fin de son tour.
 Le premier joueur qui atteint les 100 points sur global gagne le jeu.
 

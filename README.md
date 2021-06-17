@@ -1,4 +1,4 @@
-# Création d'un jeu de dé. <img src="https://raw.githubusercontent.com/GuillaumeLeger31/GuillaumeLeger/main/gif/de.gif" width="30px">
+# Création d'un jeu de dé. <img src="https://raw.githubusercontent.com/GuillaumeLeger31/GuillaumeLeger/main/gif/de.gif" width="50px">
 
 ## DiceGame--> https://guillaumeleger31.github.io/DiceGame/
 

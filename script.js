@@ -22,6 +22,8 @@ var gameStart;
 roll.addEventListener('click', function() {
     if (gameStart) {
     var dice = Math.floor(Math.random() * 6) + 1;
+    var diceDOM = document.querySelector('.dice');
+        diceDOM.style.display = 'block';
     dices.src = "dice-" + dice + ".jpg";
     if (dice !== 1 ) {
         current += dice;
@@ -36,7 +38,7 @@ hold.addEventListener('click', function () {
     if (gameStart) {
     score[activePlayer] += current;
     document.querySelector("#round-" + activePlayer).textContent = score[activePlayer];
-    if (score[activePlayer] >= 10) {
+    if (score[activePlayer] >= 100) {
         document.querySelector('#name-' + activePlayer).textContent = 'Winner!';
         gameStart = false;
     } else {
@@ -56,6 +58,8 @@ add.addEventListener('click', function () {
     current1.textContent = '0';
     name0.textContent = 'PLAYER 1';
     name1.textContent = 'PLAYER 2';
+    document.querySelector('.player-0').classList.add('test');
+    document.querySelector('.player-1').classList.remove('test');
 });
 
 
@@ -63,9 +67,12 @@ add.addEventListener('click', function () {
 function nextPlayer() {
     activePlayer === 0 ? activePlayer = 1 : activePlayer = 0;
     current = 0;
-    current.textContent = '0';
-    current.textContent = '0';
-}
+    current0.textContent = '0';
+    current1.textContent = '0';
+    document.querySelector('.player-0').classList.toggle('test');
+    document.querySelector('.player-1').classList.toggle('test');
+    document.querySelector('.dice').style.display = 'none';
+};
 
 
 

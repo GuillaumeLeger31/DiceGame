@@ -26,7 +26,8 @@ body {
     text-align: center;
 }
 
-.player {
+.player-0,
+.player-1 {
     width: 50%;
     height: 100%;
 }
@@ -118,5 +119,12 @@ span {
 .CURRENT {
     margin-top: 0px;
     color: white;
+}
+.test::after {    
+    content: "\2022";
+    font-size: 50px;
+    margin-top: -45px;
+    margin-left: 55px;
+    position: absolute;
 }
 

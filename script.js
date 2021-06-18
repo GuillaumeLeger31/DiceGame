@@ -16,6 +16,7 @@ var current;
 var score; 
 var activePlayer;
 var gameStart;
+var oppPlayer;
 
 
 
@@ -38,8 +39,9 @@ hold.addEventListener('click', function () {
     if (gameStart) {
     score[activePlayer] += current;
     document.querySelector("#round-" + activePlayer).textContent = score[activePlayer];
-    if (score[activePlayer] >= 100) {
+    if (score[activePlayer] >= 20) {
         document.querySelector('#name-' + activePlayer).textContent = 'Winner!';
+        setTimeout(newGame, 1000);
         gameStart = false;
     } else {
     nextPlayer()
@@ -47,10 +49,15 @@ hold.addEventListener('click', function () {
 });
 
 
-add.addEventListener('click', function () {
+add.addEventListener('click', newGame);
+
+function newGame() {
     score = [0, 0];
     current = 0;
-    activePlayer = 0;
+    var randomPlayer =  Math.floor(Math.random() * 2);
+    activePlayer = randomPlayer; // = 0 //
+    opPlayer();
+    console.log( "Player" + activePlayer);
     gameStart = true;
     round0.textContent = '0';
     round1.textContent = '0';
@@ -58,9 +65,9 @@ add.addEventListener('click', function () {
     current1.textContent = '0';
     name0.textContent = 'PLAYER 1';
     name1.textContent = 'PLAYER 2';
-    document.querySelector('.player-0').classList.add('test');
-    document.querySelector('.player-1').classList.remove('test');
-});
+    document.querySelector('.player-' + activePlayer).classList.add('test');
+    document.querySelector('.player-' + oppPlayer ).classList.remove('test');
+};
 
 
 
@@ -74,5 +81,8 @@ function nextPlayer() {
     document.querySelector('.dice').style.display = 'none';
 };
 
+function opPlayer() {
+    activePlayer === 1 ? oppPlayer = 0 : oppPlayer = 1;
+};
 
 
